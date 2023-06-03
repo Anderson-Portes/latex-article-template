@@ -1,0 +1,67 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{lipsum}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[english,portuguese]{babel}
+\usepackage[lmargin=3cm,tmargin=3cm,rmargin=2cm,bmargin=2cm]{geometry}
+
+\newenvironment{long-quote}{\begin{quotation}\singlespacing\small\noindent}{\end{quotation}}
+
+\setlength{\parindent}{1.25cm}
+\onehalfspacing
+\setlength{\parskip}{6pt} 
+
+\begin{document}
+
+    \frenchspacing
+
+    \title{
+        Título do artigo \footnote{Obetivo do trabalho ...}
+    }
+    \author{
+        Anderson Portes do Nascimento \footnote{Estudante da faculdade ...}
+    }
+    \date{2023, v1.0}
+    \maketitle
+
+    \begin{abstract}
+        \lipsum[1]
+
+        \bigskip
+
+        \noindent\textbf{Palavras-Chaves}: Palavra1, Palavra2, Palavra3.
+    \end{abstract}
+
+    \begin{otherlanguage}{english}
+        \begin{abstract}
+            \lipsum[1]
+
+            \bigskip
+
+            \noindent\textbf{Keywords}: Word1, Word2, Word3.
+        \end{abstract}
+    \end{otherlanguage}
+    
+    \section{Introdução}
+        \lipsum[1]
+
+        \lipsum[1]
+    \section{Procedimentos Teórico-Metodológicos}
+        "A random text to make a quote example" (EXAMPLE; 2023)
+    \section{Fundamentação}
+        \lipsum[1]
+        
+        \begin{long-quote}
+            "A citação longa é um trecho de texto com mais de três linhas, com recuo de 4 cm em relação à margem esquerda, fonte menor e espaçamento simples entre linhas" (Sobrenome, Ano, p. 10).
+        \end{long-quote}
+
+        \lipsum[1]
+    \section{Resultados}
+        \lipsum[1]
+    \section{Considerações Finais}
+        \lipsum[1]
+    \section{Referências}
+\end{document}
